@@ -6,13 +6,13 @@
   </head>
   <body>
     <header class="main-header">
-      <a class="main-header-logo" href="index.html"><img src="index-logo.jpg" alt="Логотип Седоны"/></a>
+      <a class="main-header-logo" href="index.html"><img src="index-logo.jpg" alt="Логотип Седоны"></a>
       <nav class="main-nav">
         <ul class="site-navigation">
           <li><a href="#">информация</a></li>
           <li><a href="#">фото и видео</a></li>
           <li><a href="#">карта штата</a></li>
-          <li><a href="#">гостиницы</a></li>
+          <li><a>гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -22,50 +22,49 @@
   <!-- Здесь будет форма -->
       </form>
       <section class="resoults">
-        <section class="filter">
           <b>найдено:3</b>
-          <span>сортировка:</span>
+          <section class="filter">
+              <h3>Сортировка:</h3>
+              <ul>
+                <li><a href="?sort-by=price">По цене</a></li>
+                <li><a href="?sort-by=type">По типу</a></li>
+                <li><a href="?sort-by=rating">По рейтингу</a></li>
+              </ul>
             <ul>
-              <li><a>по цене</a></li>
-              <li><a>по типу</a></li>
-              <li><a>по рейтингу</a></li>
+              <li><a href="?sort-asc"><span class="visually-hidden">По возрастанию</span></a></li>
+              <li><a href="?sort-desc"><span class="visually-hidden">По убыванию</span></a></li>
             </ul>
-          <img class="filter-up" src="placehold.it" alt="сортировка по возрастанию">
-          <img class="filter-down" src="placehold.it" alt="сортировка по убыванию">
+          </section>
           <ul class="resoults-hotels">
             <li class="resoults-hotels-item">
               <h2>Amara Resort & Spa</h2>
               <span class="rhotel-type">гостиница</span>
               <span class="price">от 4000 р.</span>
               <a class="more" href="#">подробнее</a>
-              <button class="booking">забронировать</button>
+              <a class="booking" href="#">забронировать</a>
               <img class="hotels-photo" src="#" alt="фото отеля">
-              <img class="stars" src="#" alt="количество звезд">
-              <span class="raiting">рейтинг: 8,5</span>
+              <p class="stars stars-5"><span class="visually-hidden">5 звезд</span></p>              <mark>Рейтинг: 8,5</mark>
             </li>
             <li class="resoults-hotels-item">
               <h2>Desert Quail Inn</h2>
               <span class="rhotel-type">мотель</span>
               <span class="price">от 3000 р.</span>
               <a class="more" href="#">подробнее</a>
-              <button class="booking">забронировать</button>
+              <a class="booking" href="#">забронировать</a>
               <img class="hotels-photo" src="#" alt="фото отеля">
-              <img class="stars" src="#" alt="количество звезд">
-              <span class="raiting">рейтинг: 8,9</span>
+              <p class="stars stars-5"><span class="visually-hidden">5 звезд</span></p>              <mark>Рейтинг: 8,5</mark>
             </li>
             <li class="resoults-hotels-item">
               <h2>Villas at Poco Diablo</h2>
               <span class="rhotel-type">апартаменты</span>
               <span class="price">от 3000 р.</span>
               <a class="more" href="#">подробнее</a>
-              <button class="booking">забронировать</button>
+              <a class="booking" href="#">забронировать</a>
               <img class="hotels-photo" src="#" alt="фото отеля">
-              <img class="stars" src="#" alt="количество звезд">
-              <span class="raiting">рейтинг: 8,9</span>
+              <p class="stars stars-5"><span class="visually-hidden">5 звезд</span></p>              <mark>Рейтинг: 8,5</mark>
             </li>
           </ul>
         </section>
-      </section>
     </main>
     <footer class="main-footer">
       <p class="footer-hashtag">
