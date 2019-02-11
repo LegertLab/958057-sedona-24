@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона. Отели</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -21,7 +24,7 @@
     <main class="container">
     <h1 class="visually-hidden">поиск отелей</h1>
       <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-        <p>
+        <fieldset>
           <b>инфраструктура:</b>
           <ul>
             <li class="filter-option">
@@ -37,8 +40,8 @@
               <label for="filter-wi-fi">wi-fi</label>
             </li>
           </ul>
-        </p>
-        <p>
+        </fieldset>
+        <fieldset>
           <b>тип жилья:</b>
           <ul>
             <li class="filter-option">
@@ -54,14 +57,14 @@
               <label for="filter-apartments">апартаменты</label>
             </li>
             </ul>
-        </p>
-        <p>
+        </fieldset>
+        <fieldset>
           <label for="filter-price">стоимость в сутки (р):</label>
           <input class="visually-hidden filter-input" type="range" min="0" max="4000" name="price" id="filter-price">
-        </p>
-        <button type="submit" class="filter-button button">
-          Показать
-        </button>
+          <button type="submit" class="filter-button button">
+            Показать
+          </button>
+        </fieldset>
       </form>
       <section class="resoults">
           <b>найдено:3</b>
