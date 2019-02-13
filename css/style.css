@@ -161,3 +161,138 @@ a {
   font-weight: 700;
   color: #000000;
 }
+
+.footer-social {
+  list-style: none;
+}
+
+/* Стилизация внутренней страницы */
+.filter {
+  color: #ffffff;
+  line-height: 21px;
+  background-color: black;
+}
+.filter b {
+  font-size: 16px;
+}
+.button-filter {
+  font: inherit;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 2px solid white;
+  padding: 11px 33px;
+}
+.filter-list {
+  list-style: none;
+}
+.filter-sorting-list {
+  list-style: none;
+}
+.resoults-hotels {
+  list-style: none;
+}
+.filter-sorting h3,
+.resoults b {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+.resoults-hotels-item h2 {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.filter fieldset {
+  border: none;
+}
+
+.filter-sorting h3,
+.filter-sorting-list {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #000000;
+}
+.filter-sorting-list a {
+  color: #cacaca;
+  border-bottom: 1px dotted #81b3d2;
+}
+.filter-sorting-list a:hover,
+.filter-sorting-list a:focus {
+  color: #81b3d2;
+  border-bottom: 1px dotted #81b3d2;
+}
+.filter-sorting-list a:active {
+  color: #000000;
+}
+.filter-sorting-list a:visited {
+  color: #81b3d2;
+}
+
+.button-more {
+  font: inherit;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  vertical-align: middle;
+  padding: 8px 18px;
+  background-color: #81b3d2;
+  border: none;
+}
+
+.button-more:hover,
+.button-more:focus {
+  background-color: #669ec0;
+}
+
+.button-more:active {
+  color: #88b6d1;
+  background-color: #5496bd;
+}
+
+.button-booking {
+  font: inherit;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 700;
+  text-transform: uppercase;
+  vertical-align: middle;
+  padding: 8px 18px;
+  background-color: #766357;
+  border: none;
+}
+
+.button-booking:hover,
+.button-booking:focus {
+  background-color: #604e43;
+}
+.button-booking:active {
+  color: #857871;
+  background-color: #503e33;
+}
+
+.resoults-hotels-item h2 {
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+}
+.resoults-hotels-item h2:hover,
+.resoults-hotels-item h2:focus {
+  color: #81b3d2;
+}
+.resoults-hotels-item h2:active {
+  color: #cacaca;
+}
+.resoults-hotels-item mark {
+  color: #666666;
+  background-color: #f2f2f2;
+  padding: 6px 16px;
+}
