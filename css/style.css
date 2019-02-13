@@ -8,17 +8,156 @@ body {
   font-weight: 400;
   color: #333333;
   text-transform: uppercase;
+  text-align: center;
 }
 a {
   text-decoration: none;
 }
-.site-navigation a:link {
-  color: #000000;
+
+.main-navigation {
+  line-height: 26px;
 }
-.site-navigation a:hover {
+
+.site-navigation {
+  list-style: none;
+}
+
+.site-navigation a {
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.nav-item a {
+  color: #333333;
+}
+
+.nav-item a[href]:hover,
+.nav-item a[href]:focus {
   color: #81b3d2;
 }
-.site-navigation a:focus
-.site-navigation a:active {
+
+.nav-item a[href]:active {
   color: #b2b2b2;
+}
+
+.nav-item a:not([href]) {
+  color: #766357;
+}
+
+.description p {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.description span {
+  line-height: 26px;
+}
+
+.advantages-minilist,
+.advantages-item-list {
+  list-style: none;
+}
+
+.advantages-item {
+  color: #ffffff;
+  display: flex;
+}
+.advantages-item h3 {
+  font-size: 21px;
+  font-weight: 700;
+}
+.advantages-item div {
+  background-color: #81b3d2;
+}
+
+.advantages-minilist h4,
+.advantages-item-list h3 {
+  font-size: 21px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.advantages-item-list {
+  background-color: #eeeeee;
+}
+.hotels-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+}
+.hotels-offer {
+  line-height: 24px;
+}
+
+.form-header h3 {
+  color: #ffffff;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  background-color: #766357;
+}
+
+.form-header h3:hover,
+.form-header h3:focus {
+  background-color: #604e43;
+}
+.form-header h3:active {
+  color: #857871;
+  background-color: #503e33;
+}
+
+.booking-item {
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+}
+.booking-item input {
+  font: inherit;
+
+  background-color: #f2f2f2;
+  border: 2px solid transparent;
+}
+
+.booking-item input:hover {
+  background-color: #ebebeb;
+  border: 2px solid transparent;
+}
+
+.booking-item input:focus {
+  background-color: #ffffff;
+  border:  2px solid #e5e5e5;
+  outline: none;
+}
+
+.button-search {
+  font: inherit;
+  color: #ffffff;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  vertical-align: middle;
+
+  background-color: #81b3d2;
+  border: none;
+}
+
+.button-search:hover,
+.button-search:focus {
+  background-color: #669ec0;
+}
+
+.button-search:active {
+  color: #88b6d1;
+  background-color: #5496bd;
+}
+
+.footer-hashtag {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
 }
