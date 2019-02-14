@@ -4,7 +4,7 @@ body {
 
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 1.5;
   font-weight: 400;
   color: #333333;
   text-transform: uppercase;
@@ -15,7 +15,7 @@ a {
 }
 
 .main-navigation {
-  line-height: 26px;
+  line-height: 1.86;
 }
 
 .site-navigation {
@@ -23,7 +23,7 @@ a {
 }
 
 .site-navigation a {
-  line-height: 26px;
+  line-height: 1.86;
   font-weight: 700;
 }
 
@@ -46,13 +46,13 @@ a {
 
 .description p {
   font-size: 21px;
-  line-height: 26px;
+  line-height: 1.86;
   font-weight: 700;
   color: #000000;
 }
 
 .description span {
-  line-height: 26px;
+  line-height: 1.86;
 }
 
 .advantages-minilist,
@@ -84,18 +84,18 @@ a {
 }
 .hotels-title {
   font-size: 30px;
-  line-height: 36px;
+  line-height: 1.2;
   font-weight: 700;
   color: #000000;
 }
 .hotels-offer {
-  line-height: 24px;
+  line-height: 1.7;
 }
 
 .form-header h3 {
   color: #ffffff;
   font-size: 21px;
-  line-height: 26px;
+  line-height: 1.2;
   font-weight: 700;
   background-color: #766357;
 }
@@ -110,7 +110,7 @@ a {
 }
 
 .booking-item {
-  line-height: 26px;
+  line-height: 1.86;
   font-weight: 700;
   color: #000000;
 }
@@ -119,24 +119,22 @@ a {
 
   background-color: #f2f2f2;
   border: 2px solid transparent;
+  outline: none;
 }
 
 .booking-item input:hover {
   background-color: #ebebeb;
-  border: 2px solid transparent;
 }
 
 .booking-item input:focus {
   background-color: #ffffff;
-  border:  2px solid #e5e5e5;
-  outline: none;
+  border-color: #e5e5e5;
 }
 
 .button-search {
-  font: inherit;
   color: #ffffff;
   font-size: 21px;
-  line-height: 26px;
+  line-height: 1.86;
   font-weight: 700;
   text-transform: uppercase;
   vertical-align: middle;
@@ -157,7 +155,7 @@ a {
 
 .footer-hashtag {
   font-size: 21px;
-  line-height: 26px;
+  line-height: 1.86;
   font-weight: 700;
   color: #000000;
 }
@@ -169,7 +167,7 @@ a {
 /* Стилизация внутренней страницы */
 .filter {
   color: #ffffff;
-  line-height: 21px;
+  line-height: 1.5;
   background-color: black;
 }
 .filter b {
@@ -190,19 +188,19 @@ a {
 .filter-sorting-list {
   list-style: none;
 }
-.resoults-hotels {
+.results-hotels {
   list-style: none;
 }
 .filter-sorting h3,
-.resoults b {
+.results b {
   font-size: 21px;
-  line-height: 26px;
+  line-height: 1.86;
   font-weight: 700;
   color: #000000;
 }
-.resoults-hotels-item h2 {
+.results-hotels-item h2 {
   font-size: 21px;
-  line-height: 26px;
+  line-height: 1.86;
   font-weight: 700;
   color: #000000;
 }
@@ -214,7 +212,7 @@ a {
 .filter-sorting h3,
 .filter-sorting-list {
   font-size: 12px;
-  line-height: 18px;
+  line-height: 1.5;
   font-weight: 400;
   color: #000000;
 }
@@ -225,26 +223,29 @@ a {
 .filter-sorting-list a:hover,
 .filter-sorting-list a:focus {
   color: #81b3d2;
-  border-bottom: 1px dotted #81b3d2;
 }
 .filter-sorting-list a:active {
   color: #000000;
 }
 .filter-sorting-list a:visited {
   color: #81b3d2;
+  border-bottom: none;
 }
 
-.button-more {
+.btn {
   font: inherit;
   color: #ffffff;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 1.5;
   font-weight: 700;
   text-transform: uppercase;
   vertical-align: middle;
   padding: 8px 18px;
-  background-color: #81b3d2;
   border: none;
+
+}
+.button-more {
+  background-color: #81b3d2;
 }
 
 .button-more:hover,
@@ -258,16 +259,7 @@ a {
 }
 
 .button-booking {
-  font: inherit;
-  color: #ffffff;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 700;
-  text-transform: uppercase;
-  vertical-align: middle;
-  padding: 8px 18px;
   background-color: #766357;
-  border: none;
 }
 
 .button-booking:hover,
@@ -279,20 +271,177 @@ a {
   background-color: #503e33;
 }
 
-.resoults-hotels-item h2 {
+.results-hotels-item-name {
   font-size: 21px;
-  line-height: 26px;
+  line-height: 1.86;
   color: #000000;
 }
-.resoults-hotels-item h2:hover,
-.resoults-hotels-item h2:focus {
+.results-hotels-item-name:hover,
+.results-hotels-item-name:focus {
   color: #81b3d2;
 }
-.resoults-hotels-item h2:active {
+.results-hotels-item-name:active {
   color: #cacaca;
 }
-.resoults-hotels-item mark {
+.results-hotels-item mark {
   color: #666666;
   background-color: #f2f2f2;
   padding: 6px 16px;
 }
+ /*Стили для фильтра с ползунками по демо*/
+
+ .filter-range {
+  width: 330px;
+  margin: 50px auto; /* для демо */
+
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.filter-range-title {
+  margin-bottom: 9px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.3;
+}
+
+.price-controls {
+  position: relative;
+
+  height: 36px;
+  margin-bottom: 20px;
+
+  font-size: 0;
+
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  width: 2px;
+  height: 22px;
+
+  background: #ffffff;
+  transform: translate(-50%, -50%);
+}
+
+.price-controls label {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 2.7;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.price-controls .min-price,
+.price-controls .max-price {
+  width: 90px;
+  padding-left: 65px;
+}
+
+.price-controls input {
+  width: 50px;
+  margin: 0;
+
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+
+  margin-bottom: 32px;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: #ffffff;
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle:hover {
+  background: #1c4f80;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.btn-transparent {
+  display: block;
+  margin: 0 auto;
+  padding: 6px 35px;
+
+  font-size: 14px;
+  line-height: 1.43;
+  color: #ffffff;
+  text-transform: uppercase;
+
+  background: transparent;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn-transparent:hover {
+  color: #000000;
+
+  background: #ffffff;
+}
+
+/* ----- Сеточные стили -----
+
+
+html,
+body {
+  min-width: 1280px;
+  min-height: 2762px;
+}
+
+.main-navigation {
+  display: flex;
+  justify-content: space-between;
+  min-height: 56px;
+}
+.site-navigation {
+  display: flex;
+  justify-content: space-between;
+  min-height: 56px;
+}
+*/

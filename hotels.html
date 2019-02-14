@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона. Отели</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -58,15 +58,23 @@
             </li>
             </ul>
         </fieldset>
-        <fieldset>
-          <label for="filter-price"><b>стоимость в сутки (р):</b></label></label>
-          <input class="visually-hidden filter-input" type="range" min="0" max="4000" name="price" id="filter-price">
-          <button class="button-filter" type="submit">
-            Показать
-          </button>
-        </fieldset>
+        <div class="filter-range">
+            <div class="filter-range-title">Стоимость в сутки (р):</div>
+            <div class="price-controls">
+              <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+              <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+            </div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
+            </div>
+            <button class="btn-transparent" type="submit">Показать</button>
+          </div>
       </form>
-      <section class="resoults">
+      <section class="results">
           <b>найдено: 3</b>
           <section class="filter-sorting">
               <h3>Сортировка:</h3>
@@ -80,33 +88,33 @@
               <li><a href="?sort-desc"><span class="visually-hidden">По убыванию</span></a></li>
             </ul>
           </section>
-          <ul class="resoults-hotels">
-            <li class="resoults-hotels-item">
-              <h2>Amara Resort & Spa</h2>
+          <ul class="results-hotels">
+            <li class="results-hotels-item">
+              <h2><a class="results-hotels-item-name" href="#">Amara Resort & Spa</a></h2>
               <span class="hotel-type">гостиница</span>
               <span class="price">от 4000 р.</span>
-              <a class="button-more" href="#">подробнее</a>
-              <a class="button-booking" href="#">забронировать</a>
+              <a class="btn button-more" href="#">подробнее</a>
+              <a class="btn button-booking" href="#">забронировать</a>
               <img class="hotels-photo" src="img/amara_resort.jpg" width="135" height="90" alt="фото отеля Amara Resort & Spa">
               <p class="stars stars-5"><span class="visually-hidden">5 звезд</span></p>
               <mark>Рейтинг: 8,5</mark>
             </li>
-            <li class="resoults-hotels-item">
-              <a href="#"><h2>Desert Quail Inn</h2></a>
+            <li class="results-hotels-item">
+              <h2><a class="results-hotels-item-name" href="#">Desert Quail Inn</a></h2>
               <span class="hotel-type">мотель</span>
               <span class="price">от 3000 р.</span>
-              <a class="button-more" href="#">подробнее</a>
-              <a class="button-booking" href="#">забронировать</a>
+              <a class="btn button-more" href="#">подробнее</a>
+              <a class="btn button-booking" href="#">забронировать</a>
               <img class="hotels-photo" src="img/desert_quail_inn.jpg" width="135" height="90" alt="фото отеля Desert Quail Inn">
               <p class="stars stars-3"><span class="visually-hidden">3 звезды</span></p>
               <mark>Рейтинг: 8,9</mark>
             </li>
-            <li class="resoults-hotels-item">
-              <h2>Villas at Poco Diablo</h2>
+            <li class="results-hotels-item">
+              <h2><a class="results-hotels-item-name" href="#">Villas at Poco Diablo</a></h2>
               <span class="hotel-type">апартаменты</span>
               <span class="price">от 3000 р.</span>
-              <a class="button-more" href="#">подробнее</a>
-              <a class="button-booking" href="#">забронировать</a>
+              <a class="btn button-more" href="#">подробнее</a>
+              <a class="btn button-booking" href="#">забронировать</a>
               <img class="hotels-photo" src="img/villas_at_poco_diablo.jpg" width="135" height="90" alt="фото отеля Villas at Poco Diablo">
               <p class="stars stars-2"><span class="visually-hidden">2 звезды</span></p>
               <mark>Рейтинг: 9,2</mark>
