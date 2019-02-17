@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -15,77 +15,82 @@
         </a>
         <ul class="site-navigation">
           <li class="nav-item"><a href="#">информация</a></li>
-          <li class="nav-item"><a href="#">фото и видео</a></li>
+          <li class="nav-item margin-for-logo"><a href="#">фото и видео</a></li>
           <li class="nav-item"><a href="#">карта штата</a></li>
           <li class="nav-item"><a href="hotels.html">гостиницы</a></li>
         </ul>
       </nav>
     </header>
     <main class="container">
-      <div class="visually-hidden">
+      <!--<div class="visually-hidden">
         <p>Welcome to the Gorgeous Sedona!</p>
         <p>Because the Grand Canyon Sucks!</p>
       </div>
-      <h1 class="visually-hidden">О Седоне</h1>
+      <h1 class="visually-hidden">О Седоне</h1>-->
         <section class="description">
-          <p>Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+          <div class="description-wrapper"><p class="description-p">Седона — небольшой городок в Аризоне, заслуживающий большего!</p></div>
           <span>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</span>
         </section>
 
         <section class="advantages">
           <h2 class="visually-hidden">Преимущества</h2>
           <section class="advantages-item">
-            <div><h3>Настоящий городок</h3>
-            <span class="advantages-item-number">— №1 —</span>
-            <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-          </div>
-            <img src="img/advantages-city.jpg" width="800" height="256" alt="Фото города">
+            <div class="advantages-item-div">
+              <div class="advantages-item-wrapper">
+                <h3>Настоящий <br>городок</h3>
+                <span>— №1 —</span>
+                <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              </div>
+            </div>
+           <img src="img/advantages-city.jpg" width="800" height="256" alt="Фото города">
           </section>
             <ul class="advantages-minilist">
-              <li>
+              <li class="advantages-minilist-item">
                 <h4>жильё</h4>
-                <p>рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                <p>рекомендуем пожить в настоящем <br> мотеле, всё как в кино!</p>
               </li>
-              <li>
+              <li class="advantages-minilist-item">
                 <h4>еда</h4>
-                <p>всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                <p>всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p>
               </li>
-              <li>
+              <li class="advantages-minilist-item">
                 <h4>cувениры</h4>
-                <p>не только китайского, но и местного производства!</p>
+                <p>не только китайского, но и местного <br> производства!</p>
               </li>
             </ul>
           <section class="advantages-item">
             <div><h3>Там есть мост дьявола</h3>
-            <span class="advantages-item-number">— №2 —</span>
+            <span>— №2 —</span>
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
             </div>
             <img src="img/advantages-diablo.jpg"  width="800" height="256" alt="Фото Моста дьявола">
           </section>
           <ol class="advantages-item-list" start="3">
-            <li>
-              <h3>Небольшая площадь</h3>
-              <span>— №3 —</span>
-              <p>Все достопримечательности находятся очень близко</p>
+            <li class="advantages-item-list-section">
+              <div class=item1>
+                <h3>Небольшая площадь</h3>
+                <span>— №3 —</span>
+                <p>Все достопримечательности находятся очень близко</p>
+            </div>
             </li>
-            <li>
+            <li class="advantages-item-list-section item2">
               <h3>Красивая дорога</h3>
               <span>— №4 —</span>
-              <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              <p>Ехать в Седону из Лас-Вегаса совсем<br> не скучно!</p>
             </li>
-            <li>
+            <li class="advantages-item-list-section item3">
               <h3>Мало туристов</h3>
               <span>— №5 —</span>
-              <p>Большинство едет в гранд каньон и толпится там</p>
+              <p>Большинство едет в гранд каньон<br> и толпится там</p>
             </li>
           </ol>
         </section>
         <section class="hotels">
           <h2 class="visually-hidden">Поиск гостиницы</h2>
           <span class="hotels-title">заинтересовались?</span>
-          <p class="hotels-offer">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+          <p class="hotels-offer">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
           <section class="form">
-            <a class="form-header" href="#booking-form"><h3>поиск гостиницы в седоне</h3></a>
+            <a class="form-header" href="#booking-form"><h3 class="form-header-h3">поиск гостиницы в седоне</h3></a>
             <form class="booking-form" id="booking-form" action="https://echo.htmlacademy.ru" method="get">
               <p class="booking-item">
                 <label for="booking-date-checkin">Дата заезда</label>

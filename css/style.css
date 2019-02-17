@@ -64,9 +64,10 @@ a {
   color: #ffffff;
   display: flex;
 }
-.advantages-item h3 {
+.advantages-item-wrapper h3 {
   font-size: 21px;
-  font-weight: 700;
+  line-height: 1;
+  font-weight: 600;
 }
 .advantages-item div {
   background-color: #81b3d2;
@@ -75,6 +76,7 @@ a {
 .advantages-minilist h4,
 .advantages-item-list h3 {
   font-size: 21px;
+  line-height: 1;
   font-weight: 700;
   color: #000000;
 }
@@ -425,23 +427,115 @@ a {
   background: #ffffff;
 }
 
-/* ----- Сеточные стили -----
+ ----- Сеточные стили -----
 
 
-html,
-body {
-  min-width: 1280px;
+.html,
+.body {
+  width: 1200px;
   min-height: 2762px;
 }
 
-.main-navigation {
-  display: flex;
-  justify-content: space-between;
-  min-height: 56px;
-}
 .site-navigation {
   display: flex;
   justify-content: space-between;
+  width: 100%;
   min-height: 56px;
+  padding-top: 22px;
+  border: 2px dotted #000000;
 }
-*/
+.nav-item {
+  width: 240px;
+}
+.margin-for-logo {
+margin-right: 240px;
+}
+
+.description-wrapper {
+display: flex;
+justify-content: center;
+margin: 0px;
+padding: 0px;
+border: 2px dashed green;
+}
+.description-p {
+  width: 450px;
+  font-size: 21px;
+  line-height: 26px;
+  border: 2px dashed red;
+}
+.advantages-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 256px;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+.advantages-item-div {
+  width: 400px;
+  min-height: 256px;
+  border: 2px dotted red;
+}
+
+.advantages-item-wrapper {
+  width: 280px;
+  border: 2px dotted #000000;
+  margin: auto;
+}
+
+.advantages-minilist {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  min-height: 330px;
+  padding-right: 63px;
+  padding-left: 73px;
+  margin-bottom: 85px;
+}
+.advantages-minilist-item {
+  width: 400px;
+}
+
+.advantages-item-list {
+  display: flex;
+  align-items: flex-start;
+  width: 100%;
+  min-height: 256px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.advantages-item-list-section {
+  width: 400px;
+  border: 2px dotted #5496bd;
+  margin: 0px;
+  padding: 0px;
+}
+.item1 {
+ padding-top: 0px;
+  padding-left: 90px;
+ padding-right: 90px;
+ border: 2px solid black;
+ tex
+}
+
+.form-header {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.form-header-h3 {
+  width: 568px;
+  min-height: 86px;
+  padding-bottom: 0px;
+}
+
+
+
+
+
+padding: auto 77px 63px 95px;
