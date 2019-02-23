@@ -47,14 +47,14 @@
 
           <ul class="advantages-minilist">
             <li class="advantages-minilist-item">
-              <h4>жильё</h4>
+              <h4 class="motel">жильё</h4>
               <p>рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
             </li>
-            <li class="advantages-minilist-item">
+            <li class="advantages-minilist-item food">
               <h4>еда</h4>
               <p>всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
             </li>
-            <li class="advantages-minilist-item">
+            <li class="advantages-minilist-item gifts">
               <h4>cувениры</h4>
               <p>не только китайского, но и местного производства!</p>
             </li>
@@ -104,28 +104,29 @@
               <div class="form-wrapper">
                 <div class="form-wrapper-content">
                 <p class="booking-item checkin">
-                <label for="booking-date-checkin">Дата заезда:</label>
-                <input id="booking-date-checkin" type="text" name="date-checkin" placeholder="24 АПРЕЛЯ 2017">
-              </p>
-              <p class="booking-item checkout">
-                  <label for="booking-date-checkout">Дата выезда:</label>
-                  <input id="booking-date-checkout" type="text" name="date-checkout" placeholder="7 ИЮЛЯ 2017">
-              </p>
-              <p class="booking-item adults">
-                <label for="booking-adults">взрослые:</label>
-                <button class="button-count" type="button" aria-label="уменьшить количество">
-                  &minus;
-                </button>
-                <input id="booking-adults" type="number" name="adults" value="2">
-                <button class="button-count" type="button" aria-label="увеличить количество">+</button>
-              </p>
-              <p class="booking-item children">
-                <label for="booking-children">дети:</label>
+                  <label for="booking-date-checkin">Дата заезда:</label>
+                  <input class="input-checkin" id="booking-date-checkin" type="text" name="date-checkin" placeholder="24 АПРЕЛЯ 2017">
+                </p>
+                <p class="booking-item checkout">
+                    <label for="booking-date-checkout">Дата выезда:</label>
+                    <input id="booking-date-checkout" type="text" name="date-checkout" placeholder="7 ИЮЛЯ 2017">
+                </p>
+                <p class="booking-item adults">
+                  <label for="booking-adults">взрослые:</label>
                   <button class="button-count" type="button" aria-label="уменьшить количество">
                     &minus;
                   </button>
-                  <input id="booking-children" type="number" name="children" value="2">
+                  <input class="input-number-like-text" id="booking-adults" type="number" name="adults" value="2">
                   <button class="button-count" type="button" aria-label="увеличить количество">+</button>
+                </p>
+                <p class="booking-item children">
+                  <label for="booking-children">дети:</label>
+                  <button class="button-count" type="button" aria-label="уменьшить количество">
+                      &minus;
+                  </button>
+                  <input class="input-number-like-text" id="booking-children" type="number" name="children" value="2">
+                  <button class="button-count" type="button" aria-label="увеличить количество">+</button>
+                </p>
                 </div>
                 <button class="button-search" type="submit">Найти</button>
               </div>
@@ -140,7 +141,8 @@
             <a class="footer-hashtag" href="#" aria-label="Седона в инстаграме">#visitsedona</a>
           </p>
             <ul class="footer-social">
-              <li><a class="social-button" href="#"><img src="img/twitter.svg" width="17" height="15" alt="Седона в Твиттере"></a></li>
+              <li><a class="social-button" href="#"><img src="img/twitter.svg" width="17" height="15" alt="Седона в Твиттере"></a>
+            </li>
               <li><a class="social-button" href="#"><img src="img/fb-icon.svg" width="12" height="22" alt="Седона на Фейсбук"></a></li>
               <li><a class="social-button" href="#"><img src="img/youtube.svg" width="20" height="16" alt="Седона на Ютьюб"></a></li>
             </ul>
