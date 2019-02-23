@@ -38,7 +38,8 @@ a {
   position: relative;
   line-height: 1.86;
 }
-.main-header {
+
+.index_background {
   background-image: url("../img/intro.jpg");
   background-repeat: no-repeat;
   background-position: 0px 0px;
@@ -219,11 +220,23 @@ a {
   background-color: #81b3d2;
 }
 
+
+
+
+
+
+
+
+
+
 /* Стилизация внутренней страницы */
+
 .filter {
   color: #ffffff;
-  line-height: 1.5;
-  background-color: black;
+  background-image: url("../img/filter_background.jpg");
+  background-repeat: no-repeat;
+  background-position: 0px 0px;
+  min-height: ;
 }
 .filter b {
   font-size: 16px;
@@ -343,11 +356,20 @@ a {
   background-color: #f2f2f2;
   padding: 6px 16px;
 }
+
+.main-footer-inner {
+  min-height: 120px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 1);
+}
+
  /*Стили для фильтра с ползунками по демо*/
 
  .filter-range {
   width: 330px;
-  margin: 50px auto; /* для демо */
+  margin: 50px auto;
 
   color: #ffffff;
   text-transform: uppercase;
@@ -625,7 +647,7 @@ padding: 0px;
 }
 
 .main-footer {
-  width: 100%;
+
   min-height: 120px;
   display: flex;
   justify-content: space-around;
@@ -732,7 +754,6 @@ height: 38px;
   position: absolute;
   bottom: 120px;
   left: 160px;
-
   width: 74px;
   height: 70px;
 
