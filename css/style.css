@@ -285,8 +285,19 @@ a {
   padding-left: 165px;
   position: relative;
 }
+.column-hotel-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column-hotel-more {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .column-hotel-price {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 .hotels-photo {
