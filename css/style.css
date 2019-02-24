@@ -237,6 +237,10 @@ a {
   background-repeat: no-repeat;
   background-position: 0px 0px;
   min-height: ;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
 }
 .filter b {
   font-size: 16px;
@@ -256,8 +260,10 @@ a {
 .filter-sorting-list {
   list-style: none;
 }
+
 .results-hotels {
   list-style: none;
+  padding-left: 0px;
 }
 .filter-sorting h3,
 .results b {
@@ -266,11 +272,36 @@ a {
   font-weight: 700;
   color: #000000;
 }
+.results-hotels-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.column-hotel {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 165px;
+  position: relative;
+}
+.column-hotel-price {
+  display: flex;
+  justify-content: space-between;
+}
+.hotels-photo {
+position: absolute;
+left: 0px;
+top: 0px;
+}
 .results-hotels-item h2 {
   font-size: 21px;
-  line-height: 1.86;
+  line-height: 1;
   font-weight: 700;
   color: #000000;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px;
 }
 
 .filter fieldset {
@@ -284,21 +315,22 @@ a {
   font-weight: 400;
   color: #000000;
 }
-.filter-sorting-list a {
+.sorting-types a:link {
   color: #cacaca;
   border-bottom: 1px dotted #81b3d2;
 }
-.filter-sorting-list a:hover,
-.filter-sorting-list a:focus {
-  color: #81b3d2;
-}
-.filter-sorting-list a:active {
-  color: #000000;
-}
-.filter-sorting-list a:visited {
+.sorting-types a:visited {
   color: #81b3d2;
   border-bottom: none;
 }
+.sorting-types a:hover,
+.sorting-types a:focus {
+  color: #81b3d2;
+}
+.sorting-types a:active {
+  color: #000000;
+}
+
 
 .btn {
   font: inherit;
@@ -365,12 +397,72 @@ a {
   background-color: rgba(255, 255, 255, 1);
 }
 
+.filter-infrastructure {
+  width: 241px;
+  margin-left: 0px;
+  text-align: left;
+
+
+}
+.filter-hotel_type {
+  width: 488px;
+  margin-left: 0px;
+  text-align: left;
+}
+
+.results-columns {
+  display: flex;
+  justify-content: space-between;
+}
+.filter-sorting {
+  display: flex;
+  justify-content: space-between;
+  width: 900px;
+}
+.filter-sorting-header {
+  margin-right: 38px;
+}
+
+.filter-sorting-list {
+  display: flex;
+  justify-content: space-between;
+  width: 38px;
+  padding-left: 0px;
+}
+
+.sorting-types {
+  width: 238px;
+  margin-right: 520px;
+}
+
+.errows {
+  width: 38px;
+}
+
+.errows path {
+  fill: #cacaca;
+}
+.errows li:hover path,
+.errows li:focus path {
+  fill: #231f20;
+}
+.errows li:active path {
+  fill: #81b3d2;
+}
+.errows li:visited path {
+  fill: #81b3d2;
+}
+.errows-up {
+  transform: rotate(180deg);
+}
+
  /*Стили для фильтра с ползунками по демо*/
 
  .filter-range {
   width: 330px;
-  margin: 50px auto;
-
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 0px;
   color: #ffffff;
   text-transform: uppercase;
 }
