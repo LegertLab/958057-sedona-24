@@ -456,13 +456,48 @@ top: 10px;
   width: 241px;
   margin-left: 0px;
   text-align: left;
-
+  position: relative;
 
 }
+.filter-option-check {
+  padding-left: -20px;
+}
+.filter-option-check-input {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.filter-option-check_box {
+  position: absolute;
+  margin-left: -40px;
+  width: 31px;
+  height: 31px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23' height='23' viewBox='0 0 23 23'%3E%3Cpath fill='%23FFFFFF' d='M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+}
+
+.filter-option-check-input:checked + .filter-option-check_box {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='23' viewBox='0 0 27 23'%3E%3Cpath fill='%23FFFFFF' d='M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z'/%3E%3Cpath fill='%23FFFFFF' d='M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z'/%3E%3C/svg%3E%0A");
+}
+
+.filter-option-check-input:disabled + .filter-option-check_box {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='23' height='23' viewBox='0 0 23 23'%3E%3Cpath fill='%236a6a6a' d='M20 2c.542 0 1 .458 1 1v17c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h17m0-2H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3z'/%3E%3C/svg%3E");
+}
+
+.filter-option-check-input:checked:disabled + .filter-option-check_box {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='27' height='23' viewBox='0 0 27 23'%3E%3Cpath fill='%236a6a6a' d='M7.285 7.486l-2.829 2.829 7.783 7.783L26.171 4.166l-2.828-2.829-11.104 11.102z'/%3E%3Cpath fill='%23FFFFFF' d='M21 20c0 .542-.458 1-1 1H3c-.542 0-1-.458-1-1V3c0-.542.458-1 1-1h16.908L21.493.415A2.96 2.96 0 0 0 20 0H3C1.35 0 0 1.35 0 3v17c0 1.65 1.35 3 3 3h17c1.65 0 3-1.35 3-3v-9.829l-2 2V20z'/%3E%3C/svg%3E%0A");
+}
+
+
+
+
 .filter-hotel_type {
   width: 488px;
   margin-left: 0px;
   text-align: left;
+  position: relative;
 }
 
 .results-columns {
@@ -875,6 +910,7 @@ height: 38px;
 
 .booking-item {
   display: flex;
+  position: relative;
 }
 
 .button-search {
@@ -937,4 +973,27 @@ height: 38px;
 .checkout input {
   padding-left: 20px;
   color: #000000;
+}
+
+.filter-option {
+  position: relative;
+}
+
+.btn-calendar {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  left: 420px;
+  top: 5px;
+  border: none;
+  background: none;
+}
+
+.btn-calendar:hover svg,
+.btn-calendar:focus svg {
+  fill: #000000;
+}
+
+.btn-calendar:active svg {
+  fill: #81b3d2;
 }
