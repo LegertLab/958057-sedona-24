@@ -912,6 +912,7 @@ height: 38px;
 .booking-item {
   display: flex;
   position: relative;
+  align-items: center;
 }
 
 .button-search {
@@ -983,24 +984,24 @@ height: 38px;
 
 .btn-calendar {
   position: absolute;
-  width: 30px;
-  height: 30px;
-  left: 420px;
-  top: 5px;
-  border: none;
-  background-image: url(../img/calendar-gray.png);
+  top: 8px;
+  right: 10px;
+  border: 0;
+  padding: 0;
+  width: 21px;
+  height: 22px;
   background-color: transparent;
-  background-repeat: no-repeat;
-  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
-.btn-calendar:hover,
-.btn-calendar:focus {
-  background-image: url(../img/calendar-black.png);
+.btn-calendar:hover svg {
+  fill: #000;
 }
 
-.btn-calendar:active {
-  background-image: url(../img/calendar-blue.png);
+.btn-calendar:active svg {
+  fill: #81b3d2;
 }
 
 .button-count:hover,
