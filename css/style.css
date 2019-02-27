@@ -906,6 +906,7 @@ height: 38px;
   font-size: 21px;
   color: #a9a9a9;
   background-color: #f2f2f2;
+  outline: none;
 }
 
 .booking-item {
@@ -979,6 +980,7 @@ height: 38px;
   position: relative;
 }
 
+
 .btn-calendar {
   position: absolute;
   width: 30px;
@@ -986,14 +988,26 @@ height: 38px;
   left: 420px;
   top: 5px;
   border: none;
-  background: none;
+  background-image: url(../img/calendar-gray.png);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  outline: none;
 }
 
-.btn-calendar:hover svg,
-.btn-calendar:focus svg {
-  fill: #000000;
+.btn-calendar:hover,
+.btn-calendar:focus {
+  background-image: url(../img/calendar-black.png);
 }
 
-.btn-calendar:active svg {
-  fill: #81b3d2;
+.btn-calendar:active {
+  background-image: url(../img/calendar-blue.png);
+}
+
+.button-count:hover,
+.button-count:focus {
+  color: initial;
+}
+
+.button-count:active {
+  color: #81b3d2;
 }
