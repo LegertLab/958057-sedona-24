@@ -657,6 +657,9 @@ top: 10px;
 .range-toggle-max {
   left: 80%;
 }
+.filter-range {
+  box-sizing: content-box;
+}
 
 .btn-transparent {
   display: block;
@@ -1010,9 +1013,11 @@ height: 38px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  outline: none;
 }
 
-.btn-calendar:hover svg {
+.btn-calendar:hover svg,
+.btn-calendar:focus svg {
   fill: #000;
 }
 
