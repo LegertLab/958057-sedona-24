@@ -263,7 +263,6 @@ a {
   background-image: url("../img/filter_background.jpg");
   background-repeat: no-repeat;
   background-position: 0px 0px;
-  min-height: ;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -822,10 +821,18 @@ padding: 0px;
 
 .visually-hidden {
   position: absolute;
-  clip: rect(0 0 0 0);
+
   width: 1px;
   height: 1px;
   margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .main-footer {
@@ -843,14 +850,26 @@ padding: 0px;
 }
 
 .footer-copyright {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-size: 0;
 }
+
+.footer-logo,
 .footer-copyright-text {
-  padding-right: 15px;
-  font-weight: 400;
+  display: inline-block;
+  vertical-align: middle;
 }
+
+.footer-copyright-text {
+  margin-right: .55em;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.footer-logo {
+  width: 115px;
+  height: 41px;
+}
+
 .booking-form {
   width: 568px;
   height: 395px;
@@ -1012,3 +1031,13 @@ height: 38px;
 .button-count:active {
   color: #81b3d2;
 }
+
+.footer-logo:hover svg path,
+.footer-logo:focus svg path {
+fill: #81b3d2;
+}
+
+.footer-logo:active svg path {
+fill: #bdbbbc;
+}
+
