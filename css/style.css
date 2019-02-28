@@ -366,25 +366,26 @@ top: 10px;
   font-weight: 400;
   color: #000000;
 }
-.sorting-types a:link,
-.sorting-types a:visited {
+.sorting-link:not(.current):link,
+.sorting-link:not(.current):visited {
   color: #cacaca;
   border-bottom: 1px dotted #81b3d2;
 }
 
-.sorting-types a:hover,
-.sorting-types a:focus {
+.sorting-link:not(.current):hover {
   color: #81b3d2;
-}
-.sorting-types a:active {
-  color: #000000;
-  border-bottom: none;
 }
 
-.current {
-  color: #81b3d2;
-  border-bottom: none;
+.sorting-link:not(.current):active {
+  color: initial;
 }
+
+.sorting-link.current {
+  color: #81b3d2;
+  border-bottom-color: transparent;
+}
+
+
 
 .btn {
   font: inherit;
@@ -515,32 +516,29 @@ top: 10px;
 .filter-sorting-list {
   display: flex;
   justify-content: space-between;
-  width: 38px;
-  padding-left: 0px;
-}
-
-.sorting-types {
-  width: 238px;
+  width: 400px;
   margin-right: 520px;
+  padding-left: 0px;
 }
 
 .errows {
   width: 38px;
+  margin-right: 0px;
 }
 
 .errows path {
   fill: #cacaca;
 }
-.errows li:hover path,
-.errows li:focus path {
+.errows li:not(.current-errow):hover path,
+.errows li:not(.current-errow):focus path {
   fill: #231f20;
 }
-.errows li:active path {
+.errows li:not(.current-errow):active path,
+.errows li:not(.current-errow):visited path,
+.current-errow path {
   fill: #81b3d2;
 }
-.errows li:visited path {
-  fill: #81b3d2;
-}
+
 .errows-up {
   transform: rotate(180deg);
 }
@@ -549,9 +547,8 @@ top: 10px;
 
  .filter-range {
   width: 330px;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  margin-right: 0px;
+  margin: 50px auto; /* для демо */
+
   color: #ffffff;
   text-transform: uppercase;
 }
@@ -561,7 +558,7 @@ top: 10px;
 
   font-weight: 600;
   font-size: 16px;
-  line-height: 1.3;
+  line-height: 21px;
 }
 
 .price-controls {
@@ -593,7 +590,7 @@ top: 10px;
   display: inline-block;
 
   font-size: 14px;
-  line-height: 2.7;
+  line-height: 38px;
   vertical-align: top;
 
   cursor: pointer;
@@ -667,7 +664,7 @@ top: 10px;
   padding: 6px 35px;
 
   font-size: 14px;
-  line-height: 1.43;
+  line-height: 20px;
   color: #ffffff;
   text-transform: uppercase;
 
@@ -1032,12 +1029,12 @@ height: 38px;
   color: #81b3d2;
 }
 
-.footer-logo:hover svg path,
-.footer-logo:focus svg path {
+.footer-logo:hover path,
+.footer-logo:focus path {
 fill: #81b3d2;
 }
 
-.footer-logo:active svg path {
+.footer-logo:active path {
 fill: #bdbbbc;
 }
 
