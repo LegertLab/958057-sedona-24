@@ -8,7 +8,9 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
+    <div class="body-shadow container">
     <header class="main-header container">
+      <div class="grey-back"></div>
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html">
           <img src="img/logo-sedona.svg" width="140" height="71" alt="логотип Седоны">
@@ -115,9 +117,10 @@
           </div>
           </div>
           <div class="container line"></div>
-          <ul class="results-hotels">
+          <section class="results-hotels">
+            <h2 class="visually-hidden">результаты</h2>
 
-              <li class="results-hotels-item container-padded">
+              <article class="results-hotels-item container-padded">
               <div class="column-hotel">
                 <h2><a class="results-hotels-item-name" href="#">Amara Resort & Spa</a></h2>
                 <div class="column-hotel-group">
@@ -136,12 +139,12 @@
                 <div class="stars stars-4"><span class="visually-hidden">4 звезды</span></div>
                 <mark>Рейтинг: 8,5</mark>
               </div>
-              </li>
+              </article>
 
 
             <div class="container line"></div>
 
-            <li class="results-hotels-item container-padded">
+            <article class="results-hotels-item container-padded">
                 <div class="column-hotel">
                   <h2><a class="results-hotels-item-name" href="#">Desert Quail Inn</a></h2>
                   <div class="column-hotel-group">
@@ -160,11 +163,11 @@
                   <p class="stars stars-3"><span class="visually-hidden">3 звезды</span></p>
                   <mark>Рейтинг: 8,9</mark>
                 </div>
-            </li>
+            </article>
 
           <div class="container line"></div>
 
-            <li class="results-hotels-item container-padded">
+            <article class="results-hotels-item container-padded">
                   <div class="column-hotel">
                     <h2><a class="results-hotels-item-name" href="#">Villas at Poco Diablo</a></h2>
                     <div class="column-hotel-group">
@@ -184,8 +187,8 @@
                     <p class="stars stars-2"><span class="visually-hidden">2 звезды</span></p>
                     <mark>Рейтинг: 9,2</mark>
                   </div>
-            </li>
-            </ul>
+            </article>
+          </section>
             <div class="container line"></div>
 
         </section>
@@ -237,5 +240,6 @@
         </a>
       </p>
     </footer>
+  </div>
   </body>
 </html>
