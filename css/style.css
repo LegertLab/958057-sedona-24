@@ -17,17 +17,13 @@ body {
   color: #333333;
   text-transform: uppercase;
   text-align: center;
-
-}
-.body-shadow {
-  box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
 }
 
 a {
   text-decoration: none;
 }
 
-/* Основные параметры */
+/* Базовые настройки */
 
 .container {
   width: 1200px;
@@ -57,17 +53,19 @@ a {
   overflow: hidden;
 }
 
+.body-shadow {
+  box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
+}
+
 .grey-back {
-  position: absolute;
-  z-index: -1;
-  left: -40px;
-  top: 0px;
-  width: 1280px;
-  min-height: 2762px;
-  background-color: #f2f2f2;
   margin-right: auto;
   margin-left: auto;
+  z-index: -1;
+  top: 0px;
+  width: 1280px;
+  background-color: #f2f2f2;
 }
+
 /* Шапка главной страницы */
 .main-header {
   position: relative;
@@ -394,10 +392,11 @@ margin-right: 240px;
   font-weight: 700;
   text-transform: uppercase;
   vertical-align: middle;
-  padding: 0px;
+  padding: 10px 0px;
 
   background-color: #81b3d2;
   border: none;
+  outline: none;
 }
 
 .button-search:hover,
@@ -524,11 +523,6 @@ height: 38px;
   display: flex;
   position: relative;
   align-items: center;
-}
-
-.button-search {
-  padding-top: 10px;
-  padding-bottom: 10px;
 }
 
  /* Футер сайта */
@@ -774,6 +768,9 @@ height: 38px;
 
 /* ВНУТРЕННЯЯ. Результаты выдачи поиска - карточки отелей */
 
+.line {
+  border-top: 1px solid #e5e5e5;
+}
 .results-hotels-item {
   display: flex;
   justify-content: space-between;
