@@ -141,7 +141,7 @@ a {
 
 .nav-item:nth-child(1),
 .nav-item:nth-child(2) {
-    text-align: left;    
+    text-align: left;
 }
 
 .nav-item:nth-child(3) {
@@ -157,7 +157,7 @@ a {
     padding-right: 72px;
 }
 
-.margin-for-logo {    
+.margin-for-logo {
     font-weight: 700;
 }
 
@@ -367,8 +367,8 @@ h4 {
 }
 
 .hotels-offer {
-    margin: 0;    
-    line-height: 1.7;    
+    margin: 0;
+    line-height: 1.7;
 }
 
 .form {
@@ -1216,7 +1216,7 @@ h4 {
     background: #ffffff;
 }
 
-/* ВНУТРЕННЯЯ. Футер */
+/* ВНУТРЕННЯЯ.  Футер */
 
 .main-footer-inner {
     position: relative;
